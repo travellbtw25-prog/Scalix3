@@ -1,0 +1,157 @@
+<!--
+  Scalix Website - Services Titles Font Updated
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scalix</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;600&family=Monoton&family=Audiowide&family=Oswald:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Rajdhani', sans-serif; background: linear-gradient(135deg, #000000, #001100); color: #d1d5db; overflow-x: hidden; margin:0; padding:0; }
+    body::before { content:'X'; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-20deg); font-size: 500px; color: rgba(57,255,20,0.05); font-family:'Monoton', cursive; pointer-events:none; z-index:0; }
+
+    header { position: fixed; top:0; left:0; width:100%; display:flex; justify-content: space-between; align-items:center; padding:1rem 2rem; background: linear-gradient(to right, #000000, #003300); box-shadow: 0 2px 10px rgba(0,255,20,0.2); z-index: 50; }
+    header h1 { font-family: 'Monoton', cursive; color: #39ff14; font-size: 2rem; letter-spacing: 2px; }
+    nav a { margin-left: 1.5rem; color: #d1d5db; font-weight: bold; transition: color 0.3s; text-decoration:none; }
+    nav a:hover { color: #39ff14; }
+
+    .neon-glow { text-shadow:0 0 10px #39ff14,0 0 20px #39ff14,0 0 40px #39ff14; }
+    .logo-x-in-word { color: #39ff14; font-family:'Monoton', cursive; font-weight:bold; transform: rotate(-15deg); }
+    h1,h2,h3,h4 { margin-bottom: 1rem; }
+
+    /* Services cards font update */
+    .service-card h3 { font-family: 'Orbitron', sans-serif; font-weight: 700; font-size:1.8rem; color:#39ff14; }
+
+    .service-card { background: rgba(0,51,0,0.7); border-radius: 2rem; padding: 2rem; margin-bottom: 2rem; transition: transform 0.3s, box-shadow 0.3s; opacity: 0; transform: translateY(20px); }
+    .service-card.show { opacity:1; transform: translateY(0); }
+    .service-card:hover { transform: translateY(-8px); box-shadow: 0 0 20px #39ff14; }
+
+    .contact-form { background: repeating-linear-gradient(45deg, #0a0a0a, #0a0a0a 10px, #003300 10px, #003300 20px); border-radius:1rem; box-shadow:0 0 20px #39ff14; padding:2rem; max-width:600px; margin:2rem auto; }
+    .contact-form input,.contact-form textarea { width:100%; padding:0.75rem; margin-bottom:1rem; border-radius:0.5rem; border:none; font-size:1.1rem; color:black; font-weight:700; }
+    .contact-form button { background-color:#39ff14; color:#000; font-weight:bold; padding:0.75rem 1.5rem; border-radius:0.5rem; cursor:pointer; width:100%; }
+    .contact-form button:hover { background-color:#2ecc2e; }
+
+    .self-contact { max-width:600px; margin:3rem auto; padding:2rem; background: rgba(0,51,0,0.7); border-radius:1rem; text-align:center; box-shadow:0 0 20px #39ff14; }
+    .self-contact a { display:flex; align-items:center; justify-content:center; gap:0.5rem; color:#d1d5db; font-weight:600; font-size:1.2rem; margin-bottom:1rem; text-decoration:none; transition: color 0.3s; }
+    .self-contact a:hover { color:#39ff14; }
+    .self-contact img { width:24px; height:24px; }
+
+    @keyframes fadeIn {0% {opacity:0;} 100% {opacity:1;} }
+    .anim-fade { animation: fadeIn 2s ease-in-out forwards; }
+    @keyframes slowBounce {0%,20%,50%,80%,100%{transform:translateY(0);}40%{transform:translateY(-8px);}60%{transform:translateY(-4px);} }
+    .slow-bounce { animation: slowBounce 4s infinite; }
+
+    /* Hero section spacing */
+    section.hero { padding-top:8rem; margin-bottom:4rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Top Navigation -->
+  <header>
+    <h1>Scali<span class="logo-x-in-word">X</span></h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero text-center anim-fade">
+    <h1 class="text-5xl neon-glow">Scali<span class="logo-x-in-word">X</span></h1>
+    <p class="text-gray-300 text-lg mt-4">Scale Your Brand with Confidence</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="service-card slow-bounce">
+      <h3>Brand Strategy</h3>
+      <p>Comprehensive planning to define your brand’s identity, positioning, and messaging to maximize market impact.</p>
+    </div>
+    <div class="service-card slow-bounce">
+      <h3>Funnel Optimization</h3>
+      <p>Enhancing your sales and marketing funnels to increase conversion rates, improve user experience, and drive revenue growth.</p>
+    </div>
+    <div class="service-card slow-bounce">
+      <h3>Paid Media Management</h3>
+      <p>Strategic planning and execution of paid campaigns across multiple platforms to maximize ROI and brand reach.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-6xl mx-auto mt-24 px-6 text-center slow-bounce">
+    <h3 class="text-3xl font-bold green-title">About Us</h3>
+    <p class="text-gray-300 text-lg">Scalix is a freelance brand scaling agency dedicated to helping businesses grow with innovative strategies and data-driven marketing solutions.</p>
+  </section>
+
+  <!-- Clients Section -->
+  <section id="clients" class="max-w-6xl mx-auto mt-24 px-6 text-center">
+    <h3 class="text-2xl font-bold green-title mb-6">Trusted by Satisfied Clients</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="service-card">
+        <p>“Scalix transformed our brand’s online presence. Amazing results!”</p>
+        <h4 class="green-title">— Alex P.</h4>
+      </div>
+      <div class="service-card">
+        <p>“Professional, creative, and efficient. Highly recommend!”</p>
+        <h4 class="green-title">— Jamie L.</h4>
+      </div>
+      <div class="service-card">
+        <p>“Our sales skyrocketed thanks to Scalix’s strategies.”</p>
+        <h4 class="green-title">— Morgan S.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="max-w-6xl mx-auto mt-24 mb-24 px-6">
+    <h3 class="text-3xl font-bold text-center mb-6">Get in Touch</h3>
+    <form class="contact-form" action="https://formspree.io/f/xzzydnab" method="POST">
+      <label>
+        My email:
+        <input type="email" name="email" placeholder="Your email" required>
+      </label>
+      <label>
+        Your message:
+        <textarea name="message" placeholder="Your message" required></textarea>
+      </label>
+      <label>
+        Instagram (optional):
+        <input type="text" name="instagram" placeholder="Instagram User">
+      </label>
+      <label>
+        TikTok (optional):
+        <input type="text" name="tiktok" placeholder="TikTok User">
+      </label>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Self Contact Section -->
+  <section id="self-contact" class="self-contact">
+    <h3 class="text-2xl font-bold green-title mb-4">Contact Me Directly</h3>
+    <a href="mailto:Travellbtw25@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" /> Travellbtw25@gmail.com</a>
+    <a href="https://instagram.com/Travs_brand" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon" /> @Travs_brand</a>
+    <a href="https://www.tiktok.com/@travsbrands" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok Icon" /> @travsbrands</a>
+  </section>
+
+  <footer class="bg-black text-green-400 py-6 text-center font-bold text-lg">
+    <p>© 2025 Scalix</p>
+  </footer>
+
+  <script>
+    const serviceCards = document.querySelectorAll('.service-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('show'); } });
+    }, { threshold: 0.3 });
+    serviceCards.forEach(card => observer.observe(card));
+  </script>
+
+</body>
+</html>
